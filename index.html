@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>MaxGraph New Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <div class="site-container">
+      <header class="header">
+  <div class="container-fluid header__container">
+    <a href="" class="header__logo">
+      <img
+        loading="lazy"
+        src="./img/svg/logo.svg"
+        class="image"
+        width="228"
+        height="48"
+        alt=""
+      />
+    </a>
+    <nav class="header__navbar" title="Главное меню" data-menu>
+      <ul class="navbar__list list-reset">
+        <li class="navbar__item">
+          <a href="#about" class="navbar__link data-scroll" data-menu-item
+            >О школе</a
+          >
+        </li>
+        <li class="navbar__item">
+          <a href="#trainers" class="navbar__link data-scroll" data-menu-item
+            >Тренеры</a
+          >
+        </li>
+        <li class="navbar__item">
+          <a href="#price" class="navbar__link data-scroll" data-menu-item
+            >Стоимость</a
+          >
+        </li>
+      </ul>
+      <button
+        class="btn-reset burger-close" data-menu-close
+        aria-label="Закрыть бургер"
+      ></button>
+    </nav>
+    <a class="header__phone" href="tel:+78000001122">+7 (800-00) 0-11-22</a>
+    <button
+      class="btn-reset burger"
+      aria-label="Открыть меню"
+      aria-expanded="false"
+      data-burger
+    >
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+  </div>
+</header>
+
+      <main class="main">
+        <section class="hero">
+  <div class="hero__container container">
+    <div class="hero__content">
+      <h1 class="hero__title">
+        ROBO SCHOOL
+        <span class="hero__subtitle"
+          >Курсы повышения квалификации по робототехнике для педагогов начальной
+          школы</span
+        >
+      </h1>
+      <a href="#price" class="hero__link btn btn-reset data-scroll"
+        >Записаться на курс</a
+      >
+    </div>
+    <div class="hero__image">
+      <picture>
+        <source srcset="./img/hero__img.webp" type="image/webp" />
+        <img
+          loading="lazy"
+          src="./img/hero__img.png"
+          class="image"
+          width="783"
+          height="917"
+          alt=""
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+ <section class="about section-offset" id="about">
+  <div class="about__container container">
+    <h2 class="visually-hidden">О школе</h2>
+    <p class="about__descr">
+      <span class="about__descr-span">Robo School</span>
+      — учреждение для формирования кадрового педагогического резерва в сфере
+      робототехники и программирования
+    </p>
+    <ul class="list-reset about__list">
+      <li class="about__item">
+        <div class="about__digit">10</div>
+        <p class="about__text">УМК по различным направлениям по робототехнике</p>
+      </li>
+      <li class="about__item">
+        <div class="about__digit">20</div>
+        <p class="about__text">Школ, в которых запущена робототехника</p>
+      </li>
+      <li class="about__item">
+        <div class="about__digit">100</div>
+        <p class="about__text">Педагогов прошедших курсы повышения квалификации</p>
+      </li>
+      <li class="about__item">
+        <div class="about__digit">10 000</div>
+        <p class="about__text">Обученных детей на базе собственных центров</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="result section-offset">
+  <div class="result__container container">
+    <h2 class="result__title">Что вы получите после курса</h2>
+    <ul class="list-reset result__list">
+      <li class="result__item">
+        <h3 class="result__subtitle">Удостоверение</h3>
+        <p class="result__descr">
+          Дающее право преподавать робототехнику для детей 6-12 лет в
+          образовательных учреждениях
+        </p>
+      </li>
+      <li class="result__item">
+        <h3 class="result__subtitle">Знания</h3>
+        <p class="result__descr">
+          По основам разработки учебно-методических комплексов по робототехнике
+          и программированию
+        </p>
+      </li>
+      <li class="result__item">
+        <h3 class="result__subtitle">
+          Практику
+          <span class="tooltip">
+            <button class="btn-reset tooltip__btn" aria-describedby="id1">
+              <svg
+                width="3"
+                height="13"
+                viewBox="0 0 3 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.54885 1.8695C0.955247 1.8695 0.658447 1.5895 0.658447 1.0295C0.658447 0.480698 0.955247 0.206299 1.54885 0.206299C2.14245 0.206299 2.43925 0.480698 2.43925 1.0295C2.43925 1.5895 2.14245 1.8695 1.54885 1.8695ZM1.54885 12.0839C1.10085 12.0839 0.876847 11.8375 0.876847 11.3447V4.4735C0.876847 3.9919 1.10085 3.7511 1.54885 3.7511C2.00805 3.7511 2.23765 3.9919 2.23765 4.4735V11.3447C2.23765 11.8375 2.00805 12.0839 1.54885 12.0839Z"
+                  fill="#141024"
+                />
+              </svg>
+            </button>
+            <span class="tooltip__txt" role="tooltip" id="id1">
+              <span class="visually-hidden">Тултип: </span>
+              При наличии свободных мест
+            </span>
+          </span>
+        </h3>
+        <p class="result__descr">
+          Возможность пройти практику по преподаванию робототехники на базе R: ED
+          LAB (в оффлайн или онлайн формате)
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+ <section class="trainers section-offset" id="trainers">
+  <div class="container">
+    <h2 class="trainers__title">Профессиональные тренеры</h2>
+  </div>
+  <div class="trainers__wrapper">
+    <div class="swiper trainers__content">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="trainers__item">
+            <picture>
+              <source srcset="./img/trainers1.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="./img/trainers1.png"
+                class="trainers__image"
+                width="360"
+                height="500"
+                alt="Ирина Лайм"
+              />
+            </picture>
+            <div class="trainers__name">Ирина Лайм</div>
+            <div class="trainers__post">преподаватель по робототехнике</div>
+            <button class="btn-reset trainers__btn" data-graph-path="trainer-1">
+              Подробнее
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="trainers__item">
+            <picture>
+              <source srcset="./img/trainers2.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="./img/trainers2.png"
+                class="trainers__image"
+                width="360"
+                height="500"
+                alt="Марина Орлова"
+              />
+            </picture>
+            <div class="trainers__name">Марина Орлова</div>
+            <div class="trainers__post">преподаватель по робототехнике</div>
+            <button class="btn-reset trainers__btn" data-graph-path="trainer-1">
+              Подробнее
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="trainers__item">
+            <picture>
+              <source srcset="./img/trainers3.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="./img/trainers3.png"
+                class="trainers__image"
+                width="360"
+                height="500"
+                alt="Максим Петров"
+              />
+            </picture>
+            <div class="trainers__name">Максим Петров</div>
+            <div class="trainers__post">преподаватель по программированию</div>
+            <button class="btn-reset trainers__btn" data-graph-path="trainer-1">
+              Подробнее
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="trainers__item">
+            <picture>
+              <source srcset="./img/trainers4.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="./img/trainers4.png"
+                class="trainers__image"
+                width="360"
+                height="500"
+                alt="Константин Назаров"
+              />
+            </picture>
+            <div class="trainers__name">Константин Назаров</div>
+            <div class="trainers__post">преподаватель по робототехнике</div>
+            <button class="btn-reset trainers__btn" data-graph-path="trainer-1">
+              Подробнее
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="trainers__item">
+            <picture>
+              <source srcset="./img/trainers5.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="./img/trainers5.png"
+                class="trainers__image"
+                width="360"
+                height="500"
+                alt="Лиза Весенняя"
+              />
+            </picture>
+            <div class="trainers__name">Лиза Весенняя</div>
+            <div class="trainers__post">преподаватель по программированию</div>
+            <button class="btn-reset trainers__btn" data-graph-path="trainer-1">
+              Подробнее
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="trainers__nav">
+      <div class="trainers__scroll"></div>
+      <div class="trainers__buttons">
+        <button
+          class="btn-reset trainers__slider-btn trainers__slider-btn--prev"
+          area-label="Перейти к предыдущему слайду"
+        ></button>
+        <button
+          class="btn-reset trainers__slider-btn trainers__slider-btn--next"
+          area-label="Перейти к следующему слайду"
+        ></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="paket section-offset" id="price">
+  <div class="paket__container container">
+    <h2 class="paket__title">Выберите нужный пакет</h2>
+    <ul class="list-reset paket__list">
+      <li class="paket__item paket__item-active">
+        <h3 class="paket__name">PRO</h3>
+        <div class="paket__price">20.000 ₽</div>
+        <p class="paket__descr">УМК по робототетхнике и программированию</p>
+        <button class="btn-reset paket__btn btn">Оставить заявку</button>
+      </li>
+      <li class="paket__item">
+        <h3 class="paket__name">ROBO</h3>
+        <div class="paket__price">15.000 ₽</div>
+        <p class="paket__descr">УМК по робототехнике</p>
+        <button class="btn-reset paket__btn btn">Оставить заявку</button>
+      </li>
+      <li class="paket__item">
+        <h3 class="paket__name">PROG</h3>
+        <div class="paket__price">10.000 ₽</div>
+        <p class="paket__descr">УМК по программированию</p>
+        <button class="btn-reset paket__btn btn">Оставить заявку</button>
+      </li>
+    </ul>
+  </div>
+</section>
+ <section class="order">
+  <div class="container order__container">
+    <div class="order__left">
+      <h2 class="order__title">
+        Запишитесь на курс со скидкой 10%
+      </h2>
+      <p class="order__descr">
+        Акция действительна до 10 марта 2022 года
+      </p>
+    </div>
+    <div class="order__right">
+      <form action="#" class="form order__form">
+        <label class="form__label">
+          <input type="text" name="Имя" class="input-reset form__input input-name" placeholder="Имя">
+        </label>
+        <label class="form__label">
+          <input type="tel" name="Телефон" class="input-reset form__input input-tel" placeholder="Телефон">
+        </label>
+        <label class="form__label">
+          <input type="email" name="E-mail" class="input-reset form__input input-email" placeholder="E-mail">
+        </label>
+        <button class="btn-reset btn form__btn">Отправить</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container-fluid footer__container">
+      <a href="" class="footer__logo">
+        <img
+          loading="lazy"
+          src="./img/svg/logo.svg"
+          class="image"
+          width="228"
+          height="48"
+          alt=""
+        />
+      </a>
+      <p class="footer__descr">© ROBO.SCHOOL</p>
+    <a class="footer__phone" href="tel:+78000001122">+7 (800-00) 0-11-22</a>
+  </div>
+</footer>
+ <div class="graph-modal">
+  <div
+    class="graph-modal__container popup"
+    role="dialog"
+    aria-modal="true"
+    data-graph-target="trainer-1"
+  >
+    <button
+      class="btn-reset js-modal-close graph-modal__close"
+      aria-label="Закрыть модальное окно"
+    >
+      <svg
+        width="15"
+        height="15"
+        viewBox="0 0 15 15"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="1.05532"
+          y1="-1.05532"
+          x2="16.6082"
+          y2="-1.05532"
+          transform="matrix(0.681575 0.731748 -0.681575 0.731748 1 2)"
+          stroke="#141024"
+          stroke-width="2.11065"
+          stroke-linecap="round"
+        />
+        <line
+          x1="1.05532"
+          y1="-1.05532"
+          x2="16.6082"
+          y2="-1.05532"
+          transform="matrix(0.681575 -0.731748 0.681575 0.731748 1.96094 15)"
+          stroke="#141024"
+          stroke-width="2.11065"
+          stroke-linecap="round"
+        />
+      </svg>
+    </button>
+    <div class="graph-modal__content">
+      <div class="popup__top">
+        <div class="popup__image">
+          <picture>
+            <source srcset="./img/trainers1.webp" type="image/webp" />
+            <img
+              loading="lazy"
+              src="./img/trainers1.png"
+              class="image"
+              width="160"
+              height="222"
+              alt="Марина Орлова"
+            />
+          </picture>
+        </div>
+        <div class="popup__info">
+          <div class="popup__name">Ирина Лайм</div>
+          <div class="popup__post">Преподаватель по робототехнике</div>
+          <ul class="list-reset social">
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg
+                  class="social__svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0ZM16.5635 15.6589V23.8197H13.1869V15.6592H11.5V12.8469H13.1869V11.1585C13.1869 8.86425 14.1395 7.5 16.8457 7.5H19.0988V10.3126H17.6905C16.637 10.3126 16.5673 10.7056 16.5673 11.4391L16.5635 12.8466H19.1147L18.8162 15.6589H16.5635Z"
+                    fill="#141024"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg
+                  class="social__svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0ZM11.702 7.04833C12.5554 7.0095 12.8281 7 15.0007 7H14.9983C17.1716 7 17.4433 7.0095 18.2966 7.04833C19.1483 7.08733 19.73 7.22217 20.24 7.42C20.7666 7.62417 21.2116 7.89751 21.6567 8.34251C22.1017 8.78719 22.375 9.23352 22.58 9.7597C22.7767 10.2684 22.9117 10.8497 22.9517 11.7014C22.99 12.5547 23 12.8274 23 15.0001C23 17.1728 22.99 17.4448 22.9517 18.2981C22.9117 19.1495 22.7767 19.731 22.58 20.2398C22.375 20.7658 22.1017 21.2121 21.6567 21.6568C21.2121 22.1018 20.7665 22.3758 20.2405 22.5802C19.7315 22.778 19.1495 22.9128 18.2978 22.9518C17.4444 22.9907 17.1726 23.0002 14.9998 23.0002C12.8272 23.0002 12.5547 22.9907 11.7014 22.9518C10.8499 22.9128 10.2684 22.778 9.75936 22.5802C9.23352 22.3758 8.78719 22.1018 8.34268 21.6568C7.89784 21.2121 7.62451 20.7658 7.42 20.2396C7.22234 19.731 7.0875 19.1496 7.04833 18.298C7.00967 17.4446 7 17.1728 7 15.0001C7 12.8274 7.01 12.5546 7.04817 11.7012C7.0865 10.8499 7.2215 10.2684 7.41984 9.75953C7.62484 9.23352 7.89818 8.78719 8.34318 8.34251C8.78785 7.89768 9.23419 7.62434 9.76036 7.42C10.269 7.22217 10.8504 7.08733 11.702 7.04833Z"
+                    fill="#141024"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.2831 8.4417C14.4225 8.44148 14.5724 8.44155 14.7341 8.44162L15.0008 8.4417C17.1368 8.4417 17.39 8.44936 18.2335 8.4877C19.0135 8.52336 19.4368 8.6537 19.7188 8.7632C20.0922 8.9082 20.3583 9.08154 20.6382 9.36154C20.9182 9.64154 21.0915 9.90821 21.2368 10.2815C21.3464 10.5632 21.4769 10.9866 21.5124 11.7666C21.5507 12.6099 21.559 12.8632 21.559 14.9983C21.559 17.1333 21.5507 17.3866 21.5124 18.23C21.4767 19.01 21.3464 19.4333 21.2368 19.715C21.0918 20.0883 20.9182 20.3542 20.6382 20.634C20.3582 20.914 20.0923 21.0873 19.7188 21.2323C19.4372 21.3423 19.0135 21.4723 18.2335 21.508C17.3901 21.5463 17.1368 21.5547 15.0008 21.5547C12.8646 21.5547 12.6114 21.5463 11.7681 21.508C10.9881 21.472 10.5647 21.3417 10.2826 21.2322C9.90923 21.0872 9.64256 20.9138 9.36256 20.6338C9.08256 20.3538 8.90922 20.0878 8.76389 19.7143C8.65439 19.4326 8.52388 19.0093 8.48838 18.2293C8.45005 17.386 8.44238 17.1326 8.44238 14.9963C8.44238 12.8599 8.45005 12.6079 8.48838 11.7646C8.52405 10.9846 8.65439 10.5612 8.76389 10.2792C8.90889 9.90588 9.08256 9.63921 9.36256 9.35921C9.64256 9.0792 9.90923 8.90587 10.2826 8.76053C10.5646 8.65053 10.9881 8.52053 11.7681 8.4847C12.5061 8.45136 12.7921 8.44136 14.2831 8.4397V8.4417ZM19.271 9.77005C18.741 9.77005 18.311 10.1996 18.311 10.7297C18.311 11.2597 18.741 11.6897 19.271 11.6897C19.8011 11.6897 20.2311 11.2597 20.2311 10.7297C20.2311 10.1997 19.8011 9.76971 19.271 9.76971V9.77005ZM10.8926 15.0001C10.8926 12.7313 12.732 10.8918 15.0008 10.8917C17.2696 10.8917 19.1087 12.7312 19.1087 15.0001C19.1087 17.269 17.2698 19.1076 15.001 19.1076C12.7321 19.1076 10.8926 17.269 10.8926 15.0001Z"
+                    fill="#141024"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15.0007 12.3335C16.4734 12.3335 17.6674 13.5273 17.6674 15.0002C17.6674 16.4729 16.4734 17.6669 15.0007 17.6669C13.5278 17.6669 12.334 16.4729 12.334 15.0002C12.334 13.5273 13.5278 12.3335 15.0007 12.3335V12.3335Z"
+                    fill="#141024"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="popup__bottom">
+        <div class="tabs" data-tabs="popup">
+          <div class="tabs__menu">
+            <ul class="list-reset tabs__nav">
+              <li class="tabs__nav-item">
+                <button class="btn-reset tabs__nav-btn" type="button">
+                  Образование
+                </button>
+              </li>
+              <li class="tabs__nav-item">
+                <button class="btn-reset tabs__nav-btn" type="button">
+                  Опыт работы
+                </button>
+              </li>
+              <li class="tabs__nav-item">
+                <button class="btn-reset tabs__nav-btn" type="button">
+                  Награды
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__content">
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__descr">
+                  <p class="popup__text">Сентябрь 1995 — Июнь 2000</p>
+                  <p class="popup__text">
+                    Санкт-Петербургский политехнический университет Петра
+                    Великого
+                  </p>
+                  <p class="popup__text">
+                    Факультет: Компьютерных наук и технологий
+                  </p>
+                  <p class="popup__text">
+                    Специальность: Математика и компьютерные науки
+                  </p>
+                  <p class="popup__text">Форма обучения: Очная</p>
+                  <div class="popup__content">
+                    <h3 class="popup__subtitle">Курсы и тренинги</h3>
+                    <p class="popup__text">Сентябрь 1995 — Июнь 2000</p>
+                    <p class="popup__text">
+                      Санкт-Петербургский политехнический университет Петра
+                      Великого
+                    </p>
+                    <p class="popup__text">
+                      Факультет: Компьютерных наук и технологий
+                    </p>
+                    <p class="popup__text">
+                      Специальность: Математика и компьютерные науки
+                    </p>
+                    <p class="popup__text">Форма обучения: Очная</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__descr">
+                  <p class="popup__text">Сентябрь 1997 — Июнь 2100</p>
+                  <p class="popup__text">
+                    Санкт-Петербургский политехнический университет Петра
+                    Великого
+                  </p>
+                  <p class="popup__text">
+                    Факультет: Компьютерных наук и технологий
+                  </p>
+                  <p class="popup__text">
+                    Специальность: Математика и компьютерные науки
+                  </p>
+                  <p class="popup__text">Форма обучения: Очная</p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__descr">
+                  <p class="popup__text">Сентябрь 1995 — Июнь 2000</p>
+                  <p class="popup__text">
+                    Санкт-Петербургский политехнический университет Петра
+                    Великого
+                  </p>
+                  <p class="popup__text">
+                    Факультет: Компьютерных наук и технологий
+                  </p>
+                  <p class="popup__text">
+                    Специальность: Математика и компьютерные науки
+                  </p>
+                  <p class="popup__text">Форма обучения: Очная</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>
